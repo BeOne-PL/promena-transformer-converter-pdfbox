@@ -18,7 +18,7 @@
     <properties>
         <converter-pdfbox.version>1.0.0</converter-pdfbox.version>
 
-        <pdfbox.version>2.0.16</pdfbox.version>
+        <pdfbox.version>2.0.24</pdfbox.version>
     </properties>
 
     <dependencies>
