@@ -6,7 +6,7 @@
 
     <groupId>pl.beone.promena.transformer</groupId>
     <artifactId>converter-pdfbox-root</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>pl.beone.promena.transformer:converter-pdfbox-root</name>
@@ -18,9 +18,33 @@
         <module>configuration</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>beone-public</id>
+            <url>http://nexus.office.beone.pl/repository/public</url>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <url>https://nexus.office.beone.pl/repository/releases</url>
+        </repository>
+        <repository>
+            <id>beone-releases</id>
+            <url>http://nexus.office.beone.pl/repository/releases</url>
+        </repository>
+        <repository>
+            <id>jboss-community</id>
+            <url>https://repository.jboss.org/</url>
+        </repository>
+        <repository>
+            <url>https://repo.spring.io/plugins-release/</url>
+            <id>spring-repo</id>
+        </repository>
+    </repositories>
+
     <properties>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <kotlin.version>1.9.23</kotlin.version>
     </properties>
 
     <build>

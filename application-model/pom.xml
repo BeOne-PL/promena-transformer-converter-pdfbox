@@ -13,12 +13,36 @@
 
     <groupId>pl.beone.promena.transformer</groupId>
     <artifactId>converter-pdfbox-application-model</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+
+    <repositories>
+        <repository>
+            <id>beone-public</id>
+            <url>http://nexus.office.beone.pl/repository/public</url>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <url>https://nexus.office.beone.pl/repository/releases</url>
+        </repository>
+        <repository>
+            <id>beone-releases</id>
+            <url>http://nexus.office.beone.pl/repository/releases</url>
+        </repository>
+        <repository>
+            <id>jboss-community</id>
+            <url>https://repository.jboss.org/</url>
+        </repository>
+        <repository>
+            <url>https://repo.spring.io/plugins-release/</url>
+            <id>spring-repo</id>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
